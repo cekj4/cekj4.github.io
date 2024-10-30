@@ -38,8 +38,9 @@ body {
 	text-decoration: underline;
 }
 .textFormation{
-	margin: 15px;
-	padding: 0px;
+	margin: 10px 0;
+	text-align: center;
+	font-weight: bold;
 }
 .columns {
 	display:flex;
@@ -55,9 +56,25 @@ body {
 .col-1, .col-2, .col-3 {   /* Week 3 lab - point 1 - 3 columns created */
 	text-align:left;
 }
-@media (min-width768px){     /* Week 3 lab - point 3  - usage of media query*/
+.custom-border {
+	border: 1px solid #ccc;
+	padding: 10px;
+	border-radius: 5px;
+	width: 100%;
+}
+@media (min-width:768px){     /* Week 3 lab - point 3  - usage of media query*/
+	.body{
+		text-align: center;
+		color:black;
+		margin:2px;
+	}
+	.custom-border{
+		width: 100%;
+	}
 	.columns {
-		flex-direction: column;
+		text-align:center;
+		color:black;
+		margin:0;
 	}
 }
 p{
@@ -65,7 +82,7 @@ p{
 	font-family:'Times New Roman', Times, serif;
 	font-size: 20px;
 }
-.highlight{
+.highlight, h3{
 	text-decoration: underline;
 	font-weight: bold;
 }
@@ -79,7 +96,6 @@ p{
 	border-radius: 1px;
 	padding:10px;
 }
-
 .jump:hover{
 	font-size:150%
 }
